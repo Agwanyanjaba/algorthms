@@ -39,6 +39,11 @@ public class HashMapsTest {
         HashMapsTest myHashObject = new HashMapsTest();
         System.out.println((myHashObject.addCities().toString()));
         
+        for(Integer i:citiesMap.keySet()){
+            System.out.println("Key:"+i+"Value:"+citiesMap.get(i));
+        }
+        
+        
         Iterator<Entry<Integer,String>> iter = citiesMap.entrySet().iterator();
         while(iter.hasNext()){
            

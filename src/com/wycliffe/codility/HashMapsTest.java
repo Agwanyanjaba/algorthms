@@ -28,8 +28,10 @@ public class HashMapsTest {
        citiesMap.put(1, "Landon");
        citiesMap.put(2, "Nairobi");
        citiesMap.put(3, "Paris");
+       citiesMap.put(6, "Paris"); //Hashmap automatically orders the values based on keys
        citiesMap.put(4, "Monrovia");
        citiesMap.put(5, "Kigali");
+       citiesMap.put(7, "Abuja");
        
         return citiesMap;
     }

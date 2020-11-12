@@ -20,7 +20,7 @@ public class NumberOfArraysPairs {
                 if (firstElement == secondElement) {
                     count++;
                 }
-                System.out.printf("Pairs are: %d%d", firstElement , secondElement );
+                System.out.printf("Pairs are: %d and %d", firstElement , secondElement );
                 if(firstElement==secondElement){
                     System.out.println("*" );
                 }

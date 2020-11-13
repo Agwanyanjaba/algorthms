@@ -15,7 +15,7 @@ public class LongestSubstring {
             boolean[] visited = new boolean[256];
 
             for (int j = i; j < n; j++) {
-                    // If current element is visited 
+                // If current element is visited 
                 // Break the loop 
                 if (visited[str.charAt(j)] == true) {
                     break;

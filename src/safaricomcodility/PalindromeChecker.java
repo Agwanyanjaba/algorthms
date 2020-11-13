@@ -27,10 +27,14 @@ public class PalindromeChecker {
         }
         // Given string is a palindrome 
         return true;
+        
     }
     // Driver code 
     public static void main(String[] args) {
-        String str = "ana"; 
+        String str = "n"; 
+        //String sub = str.substring(1, 5);
+        
+        //System.out.println(sub);
         if (isPalindrome(str)) {
             System.out.print("Yes");
         } else {

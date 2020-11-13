@@ -23,6 +23,7 @@ public class LinkedListTest {
         myList.add("Volvo");       
         myList.add("Nissan");
         myList.add("BMW");
+        myList.add("BMW");
         myList.add("Toyota");
         myList.add("Porshe");
 

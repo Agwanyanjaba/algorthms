@@ -14,17 +14,19 @@ package com.wycliffe.codility;
 //test if start is greater than end
 //return sum else return end
 public class SmpleRecursion {
+    /*recusive call method definition*/
     public static int sumRecursion(int start, int end){
         if(end > start){
-            System.out.print("End"+end+"Start"+start+"\n");
-            return end + sumRecursion(start, end-1);
+            System.out.print("End"+end+"Start"+0+"\n");
+            int sum = end + sumRecursion(start,end-1);
+            return sum;
         }else{
             return end;
         }
     }
     //driver class
     public static void main(String args[]){
-        int sum = sumRecursion(5,10);
+        int sum = sumRecursion(1,10);
         System.out.println("Recursive sum is: "+ sum);
     }
     

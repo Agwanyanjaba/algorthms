@@ -24,6 +24,10 @@ public class ReturnArrayinMethods {
         makeArray(n);
         int count =  myObject.returnSum(arr, K);
         System.out.println("Length is:" + count);
+        System.out.println("Arrays are:");
+        printArray(arr);
+        
+        
     }
 
     public static void makeArray(int n) {
@@ -64,6 +68,13 @@ public class ReturnArrayinMethods {
             result[j++] = arr[i];
         }
         return result;
+    }
+    public static void printArray(int []arr){
+        for(int i=0; i<arr.length; i++){
+            for(int j=i+1; j<arr.length; j++){
+                System.out.println(arr[i]+","+arr[j]);
+            }
+        }
     }
 
 }

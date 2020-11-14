@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
-import org.json.simple.JSONObject;
+//import org.json.simple.JSONObject;
 public class HashMapsTest {
     //Declare the Hashmap
     static HashMap<Integer,String> citiesMap = new HashMap<>();
@@ -37,7 +37,7 @@ public class HashMapsTest {
     }
     
     public static void main(String args[]){
-        JSONObject jo = new JSONObject();
+        //JSONObject jo = new JSONObject();
         HashMapsTest myHashObject = new HashMapsTest();
         System.out.println((myHashObject.addCities().toString()));
         

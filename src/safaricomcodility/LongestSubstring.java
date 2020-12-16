@@ -1,21 +1,16 @@
 //@author wycliffe
 package safaricomcodility;
-
 public class LongestSubstring {
-
     public static int longestNonRepeatingSubstring(String str) {
         int n = str.length();
-
         // Result 
         int result = 0;
-
         for (int i = 0; i < n; i++) {
-
             // Note : Default values in visited are false 
             boolean[] visited = new boolean[256];
 
             for (int j = i; j < n; j++) {
-                    // If current element is visited 
+                // If current element is visited 
                 // Break the loop 
                 if (visited[str.charAt(j)] == true) {
                     break;
@@ -29,7 +24,6 @@ public class LongestSubstring {
         }
         return result;
     }
-
 // Main method code 
     public static void main(String[] args) {
         String str = "wycliiffee";

@@ -4,18 +4,26 @@
  * and open the template in the editor.
  */
 package safaricomcodility;
+
 /**
  *
  * @author wycliffe
  */
 public class PalindromeChecker {
+
     static boolean isPalindrome(String str) {
         // Pointers pointing to the beginning 
         // and the end of the string 
-        int i = 0, j = str.length()-1;
+        int i = 0, j = str.length() - 1;
+       char [] arr =  str.toCharArray(); //
+       for(int k=0; k<arr.length;k++){
+           System.out.println(">>>>"+arr[k]);
+       }
+        
+       
         // Loop to compare compare characters
-        System.out.println("Word Length"+j);
-        while (i < j) {
+        System.out.println("Word Length" + j);
+        while (i < j) { //O(n)
             // If there is a mismatch 
             if (str.charAt(i) != str.charAt(j)) {
                 return false;
@@ -28,9 +36,10 @@ public class PalindromeChecker {
         // Given string is a palindrome 
         return true;
     }
+
     // Driver code 
     public static void main(String[] args) {
-        String str = "ana"; 
+        String str = "mum";
         if (isPalindrome(str)) {
             System.out.print("Yes");
         } else {

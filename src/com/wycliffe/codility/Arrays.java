@@ -11,6 +11,7 @@ package com.wycliffe.codility;
  */
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 public class Arrays {
     static int [] arrValues = {4,2,6,9,1,0,7};
     static ArrayList<String> cars = new ArrayList<>();
@@ -28,7 +29,10 @@ public class Arrays {
             System.out.println("Values"+i);
         }
         
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
         
+        System.out.println(s);
         
     }
 }

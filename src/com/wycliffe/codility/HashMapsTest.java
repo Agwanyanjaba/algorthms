@@ -45,7 +45,7 @@ public class HashMapsTest {
             System.out.println("Key:"+i+"Value:"+citiesMap.get(i));
         }
         
-        
+        //using iterator
         Iterator<Entry<Integer,String>> iter = citiesMap.entrySet().iterator();
         while(iter.hasNext()){
            

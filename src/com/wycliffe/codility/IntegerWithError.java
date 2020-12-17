@@ -9,23 +9,39 @@ package com.wycliffe.codility;
  *
  * @author WOCHIENG1
  */
-public class IntegerWithError{
+public class IntegerWithError {
+
+    /*
+declare return int value
+check limit and sign the string value of integer if less than zero
+else reverse the string value of the integer 
+try the value of string wile parsing it back to integer
+catch large value greater than Integer
+     */
     public int reverse(int x) {
-        String ans = x < 0 ? new StringBuilder(String.valueOf(-x)).append("-").reverse().toString()
-                : new StringBuilder(String.valueOf(x)).reverse().toString();
+        boolean isNegative = false;
+        if (x < 0) {
+            x = Math.abs(x);
+            isNegative = true;
+        }
+        String reversedNum = new StringBuilder(String.valueOf(x)).reverse().toString();
+
+        reversedNum = isNegative ? ("-" + reversedNum) : reversedNum;
+
         try {
-            return Integer.parseInt(ans);
+            return Integer.parseInt(reversedNum);
         } catch (Exception e) {
             return 0;
         }
+
     }
-    
-    public static void main(String []args){
-        int  x = 1534236469;
-        
+
+    public static void main(String[] args) {
+        int x = -123;
+
         IntegerWithError obj = new IntegerWithError();
         System.out.println(obj.reverse(x));
-        
+
     }
 
 }

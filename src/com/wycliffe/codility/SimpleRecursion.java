@@ -13,7 +13,7 @@ package com.wycliffe.codility;
 //declare the methods
 //test if start is greater than end
 //return sum else return end
-public class SmpleRecursion {
+public class SimpleRecursion {
     public static int sumRecursion(int start, int end){
         if(end > start){
             System.out.print("End"+end+"Start"+start+"\n");

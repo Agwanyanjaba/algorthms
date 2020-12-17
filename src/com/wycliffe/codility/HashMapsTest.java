@@ -44,7 +44,18 @@ public class HashMapsTest {
         for(Integer i:citiesMap.keySet()){
             System.out.println("Key:"+i+"Value:"+citiesMap.get(i));
         }
-        
+        if(citiesMap.containsKey(4)){
+            System.out.println("Key found");
+        }
+        else{
+            System.out.println("Key NOT found");
+        }
+        if(citiesMap.containsValue("Abuja")){
+            System.out.println("Value found");
+        }
+        else{
+            System.out.println("Value NOT found");
+        }
         //using iterator
         Iterator<Entry<Integer,String>> iter = citiesMap.entrySet().iterator();
         while(iter.hasNext()){

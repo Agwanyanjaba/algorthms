@@ -11,13 +11,8 @@ package com.wycliffe.codility;
  */
 public class RemoveDuplicatesArrays {
     public int removeDuplicates(int[]nums){
-        int arrayLength = nums.length;
+       int j = 0;
         
-        int j = 0;
-        //initialize temp array
-        int [] temp = new int[arrayLength];
-        //return lenth if nums has zeor or one element
-        //apply constraints
         if(arrayLength>=0&&arrayLength<=Math.pow(10,4)){
             if(arrayLength==0||arrayLength==1){
                 return arrayLength;

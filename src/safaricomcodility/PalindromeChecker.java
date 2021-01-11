@@ -39,7 +39,7 @@ public class PalindromeChecker {
 
     // Driver code 
     public static void main(String[] args) {
-        String str = "mum";
+        String str = "Jane";
         if (isPalindrome(str)) {
             System.out.print("Yes");
         } else {

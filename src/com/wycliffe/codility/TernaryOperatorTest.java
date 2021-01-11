@@ -25,6 +25,6 @@ public class TernaryOperatorTest {
         
         //using ternary operator
         int z = (x > y) ? x : y;
-        System.out.println("Ternary value"+z);
+        System.out.println("Ternary value: "+z);
     }
 }

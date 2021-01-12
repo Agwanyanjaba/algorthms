@@ -25,17 +25,20 @@ public class LinkedListTest {
         myList.add("BMW");
         myList.add("BMW");
         myList.add("Toyota");
-        myList.add("Porshe");
+        myList.add("Porche");
 
     }
     public static void main(String args[]){
         LinkedListTest obj = new LinkedListTest();
         obj.addItems();
-        
+        myList.set(2, null);
         myList.addLast("Testla");
         
         System.out.print(myList);
         System.out.print(myList.getLast());
+        System.out.print(myList.getFirst());
+        int index  = myList.indexOf("Porche");
+        System.out.println("index found"+index);
     }
    
     

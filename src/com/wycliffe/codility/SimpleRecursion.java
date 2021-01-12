@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.wycliffe.codility;
 
 /**
@@ -13,12 +8,11 @@ package com.wycliffe.codility;
 //declare the methods
 //test if start is greater than end
 //return sum else return end
-<<<<<<< HEAD:src/com/wycliffe/codility/SimpleRecursion.java
+
 public class SimpleRecursion {
-=======
-public class SmpleRecursion {
+
     /*recusive call method definition*/
->>>>>>> 1a519d20a0236472d114bc9e45f313354e950fbd:src/com/wycliffe/codility/SmpleRecursion.java
+
     public static int sumRecursion(int start, int end){
         if(end > start){
             System.out.print("End"+end+"Start"+0+"\n");

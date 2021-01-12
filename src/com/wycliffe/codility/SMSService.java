@@ -13,7 +13,6 @@ import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.ResourceBundle;
 import org.jsmpp.InvalidResponseException;
 import org.jsmpp.PDUException;
 import org.jsmpp.bean.Alphabet;
@@ -29,8 +28,6 @@ import org.jsmpp.extra.NegativeResponseException;
 import org.jsmpp.extra.ResponseTimeoutException;
 import org.jsmpp.session.BindParameter;
 import org.jsmpp.session.SMPPSession;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SMSService {
     //private static final Logger LOGGER = LoggerFactory.getLogger(SimpleSubmitExample.class);

@@ -4,7 +4,7 @@ package com.wycliffe.codility;
 import java.util.HashMap; 
 import java.util.Map;
 
-public class NumberOfPairs {
+public class NumberOfPairsOptimal {
 
     public static int countPairs(int[] array, int arrayLength) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();

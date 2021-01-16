@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class Arrays {
 
-    static int[] arrValues = {1, 2, 3, 4, 5, 6, 7};
-    static int[] arrValuesTest = {1, 2, 3, 4, 5, 6, 7};
+    static int[] arrValues = {1};
+    static int[] arrValuesTest = {1};
     static ArrayList<String> cars = new ArrayList<>();
 
     public static int[] reverseArray(int[] Arr) {
@@ -46,6 +46,9 @@ public class Arrays {
 
     //rotate array k number of times
     public static int[] shiftArray(int[] arr1, int K) {
+        if(arr1.length<=1){
+            return arr1;
+        }
         int shiftedArray[] = new int[arr1.length];
         for (int i = 0; i < K; i++) {
             shiftedArray = rotateLastElement(arr1);

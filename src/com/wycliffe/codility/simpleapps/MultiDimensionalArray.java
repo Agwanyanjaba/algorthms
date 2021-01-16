@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 package com.wycliffe.codility.simpleapps;
-
+import java.util.Arrays;
 /**
  *
  * @author WOCHIENG1
  */
-public class MultiDimentionalArray {
+public class MultiDimensionalArray {
 
     public static void main(String args[]) {
         int[][] array = {{3, 4}, {5, 7}};
@@ -36,7 +36,14 @@ public class MultiDimentionalArray {
                  }
             }
             System.out.println("Max is"+max);
-           
+            
+           //Another way to find max
+           Arrays.sort(arr);
+           int max1 = arr[arr.length-1];
+           System.out.println("Max value is:"+max1);
+           String strArr = Arrays.toString(arr);
+           System.out.println("String"+strArr);
+           System.out.println("Third array char"+strArr.charAt(1));
     }
 
 }

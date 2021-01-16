@@ -23,5 +23,12 @@ public class ArrayListTest {
         for(int i=0; i<list.size(); i++){
             System.out.println("Elements are:"+list.get(i));
         }
+        ArrayListTest arraylistObject = new ArrayListTest();
+        System.out.print("Color status is:"+arraylistObject.checkIfPresent(list));
+    }
+    boolean checkIfPresent(ArrayList list){
+        boolean status = list.contains("Red");
+        
+        return status;
     }
 }

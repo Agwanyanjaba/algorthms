@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.wycliffe.codility.simpleapps;
-
+import com.wycliffe.codility.simpleapps.GradeBook;
 /**
  *
  * @author WOCHIENG1
@@ -35,7 +35,10 @@ public class SwitchTest {
      return  grade;  
     }
     public static void main(String args[]){
-        System.out.println("Grade is: "+returnGrade(71));
+        System.out.println("Grade is: "+SwitchTest.returnGrade(71));
+        GradeBook obj = new GradeBook("ICS 2223");
+        obj.displayMessage();
+        
     }
     
 }

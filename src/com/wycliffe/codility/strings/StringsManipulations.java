@@ -18,7 +18,7 @@ public class StringsManipulations {
         char[] charArray1 = {'b', 'i', 'r', 't', 'h', ' ', 'd', 'a', 'y'};
 
         //declare array of char
-        char[] chaArray2 = new char[5];
+        char[] charArray2 = new char[5];
         //use the constructor
         String s1 = new String();
         String s2 = new String(s);
@@ -36,8 +36,8 @@ public class StringsManipulations {
         System.out.println("\n" + s);
         //copy String s into charArray2
         System.out.println("The characters in the array are:");
-        for (char character : chaArray2) {
-            s.getChars(0, 5, chaArray2, 0);
+        for (char character : charArray2) {
+            s.getChars(0, 5, charArray2, 0);
             System.out.println(character);
             System.out.println();
         }
@@ -55,6 +55,7 @@ public class StringsManipulations {
         StringsManipulations.substringFinder(string);
         lastIndexOfChar(string);
         indexofChar(string);
+        System.out.println(">>>"+String.valueOf(charArray1));
 
     }
 

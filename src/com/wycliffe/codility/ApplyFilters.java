@@ -21,7 +21,7 @@ get the new sum and check if less than target
 else if target 
 */
 public class ApplyFilters {
-    public int solution(int []arr){
+    public int solution(int arr[]){
        return 0; 
     }
     

@@ -24,11 +24,13 @@ public class ComanderLambda {
         //add prime to string
         while(prime<10005){
             s += Integer.toString(prime);
-            prime +=1;
+            //System.out.println(":::::"+s);
+            
             //check if prime
-            if(!isPrime(prime)){
-                prime +=2;
+            if(isPrime(prime)){
+                prime +=1;
             }
+            prime +=1;
         }
         return s;
     }

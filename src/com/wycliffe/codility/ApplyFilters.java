@@ -21,8 +21,14 @@ get the new sum and check if less than target
 else if target 
 */
 public class ApplyFilters {
-    public int solution(int arr[]){
-       return 0; 
+    public static int [] solution(Object...args){
+        int someArr[] = {1,2,3,4};
+        for(int i:someArr){
+            System.out.println(">>>"+i);
+        }
+       return someArr; 
     }
-    
+    public static void main(String...args){
+        solution();
+    }
 }

@@ -12,6 +12,7 @@ package com.wycliffe.codility.strings;
 public class StringsManipulations {
 
     public static void main(String args[]) {
+        String string = "abcdefghijklmabcdefghijklm";
         String s = new String("hello"); //parameterised constructor
         char[] charArray = {'b', 'i', 'r', 't', 'h', ' ', 'd', 'a', 'y', 's'};
         char[] charArray1 = {'b', 'i', 'r', 't', 'h', ' ', 'd', 'a', 'y'};
@@ -49,6 +50,32 @@ public class StringsManipulations {
         }
         //Ternary 
         System.out.println(grade >= 60 ? "Passed" : "Failed");
+        
+        //call String manipulation methods
+        StringsManipulations.substringFinder(string);
+        lastIndexOfChar(string);
+        indexofChar(string);
 
     }
+
+    public static String substringFinder(String string) {
+        string  = string.substring(0, 3);
+        System.out.println(">>>>>"+string);
+        return string;
+    }
+
+    //last index of character;
+    public static int lastIndexOfChar(String string) {
+        int lastIndex = string.lastIndexOf("m");//Return -1 if the charcter is not found in the string
+        System.out.println("Last Index>>>"+lastIndex);
+        return lastIndex;
+    }
+
+    //Index of character;
+    public static int indexofChar(String string) {
+        int index = string.indexOf('c');
+        System.out.println("Index of>>>" + index);
+        return index;
+    }
+
 }

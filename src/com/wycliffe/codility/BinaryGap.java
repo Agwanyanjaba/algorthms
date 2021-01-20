@@ -52,18 +52,18 @@ public class BinaryGap {
             if(binaryNumber[i]=='0'){
                 tempCount++;
             }
-            else if(binaryNumber[i]=='1'){
-                if(tempCount>finalCount){
+            else if(binaryNumber[i]=='1' &&(tempCount>finalCount)){
+               
                     finalCount=tempCount;
                     tempCount=0;
-                }
+                
             }
         }
         return finalCount;
     }
 
     public static void main(String args[]) {
-        int N = 5681;
+        int N = 200;
 
         System.out.println(">>>" + solution(N));
         System.out.println(">>>" + solutionTwo(N));

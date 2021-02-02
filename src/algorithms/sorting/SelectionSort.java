@@ -38,13 +38,13 @@ public class SelectionSort {
 //4,2
     //Swap method
 
-    public int[] swap(int smallest, int current) {
+    public void swap(int smallest, int current) {
         int temporary = 0;
         data[temporary] = data[current];
         data[current] = data[smallest];
         data[smallest] = data[temporary];
         
-        return data;
+        
     }
 
     //method sort
@@ -74,7 +74,7 @@ public class SelectionSort {
         //@Override
         SelectionSort selection = new SelectionSort(8);
         selection.printArray();
-        System.out.println(selection.swap(78, 10));
+        //System.out.println(selection.swap(78, 10));
     }
 
 }

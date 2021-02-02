@@ -37,7 +37,7 @@ public class HttpSendSMS {
             con.setRequestProperty("Content-Type", "application/json; utf-8");
 
             //add authorization header
-            con.setRequestProperty("X-Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3eWJvc29mdF9hcGl1c2VyIiwiYXVkIjoiQUNDRVNTIiwic2NvcGVzIjoiQURNSU4iLCJpc3MiOiJodHRwOi8vc2l4ZGVlLmNvbSIsImlhdCI6MTYxMTY1MjAxNSwiZXhwIjoxNjExNjYxMDE1fQ.icJfpVbTUmAMRcndbaexogFGIaPsOjylaTZ8WwTxMcyfFg2Xsx3souqotGQG2suyGygHSB1DGdXyA4KkWJ1G6A");
+            //con.setRequestProperty("X-Authorization", "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3eWJvc29mdF9hcGl1c2VyIiwiYXVkIjoiQUNDRVNTIiwic2NvcGVzIjoiQURNSU4iLCJpc3MiOiJodHRwOi8vc2l4ZGVlLmNvbSIsImlhdCI6MTYxMTY1MjAxNSwiZXhwIjoxNjExNjYxMDE1fQ.icJfpVbTUmAMRcndbaexogFGIaPsOjylaTZ8WwTxMcyfFg2Xsx3souqotGQG2suyGygHSB1DGdXyA4KkWJ1G6A");
 
             //set response format
             con.setRequestProperty("Accept", "application/json");

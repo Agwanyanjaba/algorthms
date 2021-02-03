@@ -13,6 +13,7 @@ Generate the random numbers
  */
 package algorithms.sorting;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -35,27 +36,25 @@ public class SelectionSort {
         }
 
     }
-//4,2
     //Swap method
 
     public void swap(int smallest, int current) {
         int temporary = 0;
-        data[temporary] = data[current];
+        temporary = data[current];
         data[current] = data[smallest];
-        data[smallest] = data[temporary];
-        
-        
+        data[smallest] = temporary;      
     }
 
     //method sort
     public int[] sort() {
-
+        //4,1,3
         for (int i = 0; i < data.length; i++) {
             smallest = i;
-            for (int j = i + 1; i < data.length - 1; j++) {
+            for (int j = i + 1; j < data.length - 1; j++) {
                 if (data[j] < data[smallest]) {
                     smallest = j;
-                    swap(i, smallest);
+                    System.out.print(smallest+"--"+j+"\n");
+                    swap(i,smallest);
                 }
             }
 
@@ -74,7 +73,7 @@ public class SelectionSort {
         //@Override
         SelectionSort selection = new SelectionSort(8);
         selection.printArray();
-        //System.out.println(selection.swap(78, 10));
+        System.out.println(Arrays.toString(selection.sort()));
     }
 
 }

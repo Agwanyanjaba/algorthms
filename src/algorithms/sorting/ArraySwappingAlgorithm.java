@@ -14,7 +14,7 @@ package algorithms.sorting;
  * @author WOCHIENG1
  */
 public class ArraySwappingAlgorithm {
-    private int data []= {89,33,9};
+    private int data []= {33,88,90};
     
     //print the array
     public void printArray(){
@@ -25,12 +25,14 @@ public class ArraySwappingAlgorithm {
     }
     
     public int [] swapArray(){
-        for(int i=0; i<data.length; i++){
-            if(data[i]<data[i+1]){
-                int temporary = 0;
-                data[temporary] = data[i];
-                data[i]  = data[i+1];
-                data[i+i] = data[temporary];
+        int temporary = 0;
+        int first =0;
+        int second =1;
+       {
+            if(data[first]>data[second]){  
+                temporary = data[first];
+                data[first]  = data[second];
+                data[second] = temporary;
             }
         }
         
@@ -39,8 +41,7 @@ public class ArraySwappingAlgorithm {
     
     public static void main(String ... vargs){
         ArraySwappingAlgorithm array = new ArraySwappingAlgorithm();
-        //int [] arr =
-        array.printArray();
+        int [] arr = array.swapArray();
         try{
            array.swapArray();  
         }
@@ -50,8 +51,8 @@ public class ArraySwappingAlgorithm {
         }
         
         //System.out.println(">>>>"+arr.length);
-//        for(int i=0; i< arr.length; i++){
-//            System.out.println(">>>>>"+arr[i]);
-//        }
+        for(int i=0; i< arr.length; i++){
+            System.out.println("++++"+arr[i]);
+        }
     }
 }

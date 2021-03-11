@@ -46,7 +46,7 @@ public class BalancedParentheses {
             } else {
                 // If it was an opening bracket, push to the stack.
                 stack.push(c);
-                System.out.print("Stack now has" + stack);
+                System.out.print("Stack now has" + stack + "\n");
             }
         }
 
@@ -55,7 +55,7 @@ public class BalancedParentheses {
     }
 
     public static void main(String args[]) {
-        String s = "()";
+        String s = "{[()()]}";
         BalancedParentheses obj = new BalancedParentheses();
         System.out.println(">>>>" + obj.isValid(s));
     }

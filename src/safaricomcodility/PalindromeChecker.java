@@ -13,24 +13,19 @@ package safaricomcodility;
 public class PalindromeChecker {
 
     static boolean isPalindrome(String str) {
+        if(str==null){
+            return false;
+        }
         // Pointers pointing to the beginning 
         // and the end of the string 
         int i = 0, j = str.length() - 1;
-       char [] arr =  str.toCharArray(); //
-       for(int k=0; k<arr.length;k++){
-           System.out.println(">>>>"+arr[k]);
-       }
-        
-       
-        // Loop to compare compare characters
-        System.out.println("Word Length" + j);
         while (i < j) { //O(n)
             // If there is a mismatch 
             if (str.charAt(i) != str.charAt(j)) {
                 return false;
             }
             // Increment first pointer and 
-            // decrement the other 
+            // decrement the other pointer
             i++;
             j--;
         }
@@ -40,11 +35,11 @@ public class PalindromeChecker {
 
     // Driver code 
     public static void main(String[] args) {
-        String str = "Jane";
+        String str = "";
         if (isPalindrome(str)) {
-            System.out.print("Yes");
+            System.out.print("Yes\n");
         } else {
-            System.out.print("No");
+            System.out.print("No\n");
         }
     }
 }

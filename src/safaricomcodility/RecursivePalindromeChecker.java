@@ -16,7 +16,7 @@ public class RecursivePalindromeChecker {
     //Driver class
 
     public static void main(String[] args) {
-        String string = "ana";
+        String string = "moon";
         System.out.println("Word is palindrome"+isPalindrome(string));
     }
 }

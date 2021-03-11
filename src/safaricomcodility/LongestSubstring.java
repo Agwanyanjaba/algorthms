@@ -2,14 +2,13 @@
 package safaricomcodility;
 public class LongestSubstring {
     public static int longestNonRepeatingSubstring(String str) {
-        int n = str.length();
         // Result 
         int result = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < str.length(); i++) {
             // Note : Default values in visited are false 
             boolean[] visited = new boolean[256];
 
-            for (int j = i; j < n; j++) {
+            for (int j = i; j < str.length(); j++) {
                 // If current element is visited 
                 // Break the loop 
                 if (visited[str.charAt(j)] == true) {

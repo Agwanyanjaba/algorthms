@@ -11,8 +11,7 @@ package com.wycliffe.codility;
  */
 public class RemoveDuplicatesArrays {
     public int removeDuplicates(int[]nums){
-       int counter = 0;
-        
+       int counter = 0;        
         if(nums.length ==0){
             return 0;
         }
@@ -24,8 +23,7 @@ public class RemoveDuplicatesArrays {
                   counter++;
                   //Modify nums in - place with new non duplicate elements
                   nums[counter] = nums[i]; 
-              }
-              
+              }              
           }  
         }
         return counter+1;

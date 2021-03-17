@@ -53,18 +53,31 @@ public class BinaryGap {
         for (int i = 0; i < binaryNumber.length; i++) {
             if (binaryNumber[i] == '0') {
                 tempCount++;
+<<<<<<< HEAD
             } else if (binaryNumber[i] == '1') {
                 if (tempCount > finalCount) {
                     finalCount = tempCount;
                     tempCount = 0;
                 }
+=======
+            }
+            else if(binaryNumber[i]=='1' &&(tempCount>finalCount)){
+               
+                    finalCount=tempCount;
+                    tempCount=0;
+                
+>>>>>>> master
             }
         }
         return finalCount;
     }
 
     public static void main(String args[]) {
+<<<<<<< HEAD
         int N = 1345789996;
+=======
+        int N = 200;
+>>>>>>> master
 
         System.out.println(">>>" + solution(N));
         System.out.println(">>>" + solutionTwo(N));
